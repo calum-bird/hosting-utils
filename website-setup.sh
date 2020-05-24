@@ -29,6 +29,9 @@ conf="server {
 # Send this config to our file
 echo "$conf" > /etc/nginx/sites-available/$1.conf
 
+# Enable httpd sebool parameter
+sudo setsebool -P httpd_can_network_connect on
+
 # Set directory permissions
 sudo chcon -Rt httpd_sys_content_t /var/www
 sudo chmod a+rwx /var/www
