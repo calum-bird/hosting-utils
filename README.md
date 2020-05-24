@@ -1,1 +1,1 @@
-* These tools are mostly tested on CentOS 7 *
+*These tools are mostly tested on CentOS 7*
